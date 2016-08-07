@@ -1,6 +1,6 @@
 _OakSpeechText1::
 	text "AAAAAAAAAAAAAAAA"
-	line "ĄĆĘŁŃÓŚŻŹ"
+	line "ĄĆĘŁŃÓŚŻŹ" ; nie mówimy o tym
 	cont "world of #MON!"
 
 	para "My name is OAK!"

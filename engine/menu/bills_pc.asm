@@ -86,11 +86,11 @@ DisplayPCMainMenu::
 	ret
 
 SomeonesPCText:   db "SOMEONE's PC@"
-BillsPCText:      db "BILL's PC@"
-PlayersPCText:    db "'s PC@"
-OaksPCText:       db "PROF.OAK's PC@"
-PKMNLeaguePCText: db $4a, "LEAGUE@"
-LogOffPCText:     db "LOG OFF@"
+BillsPCText:      db "PC BILLA@"
+PlayersPCText:    db " - PC@"
+OaksPCText:       db "PC PROF. OAKA@"
+PKMNLeaguePCText: db $4a, "LIGA@"
+LogOffPCText:     db "WYLOGUJ@"
 
 BillsPC_::
 	ld hl, wd730

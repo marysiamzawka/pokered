@@ -34,7 +34,7 @@ MainMenu:
 	jr z,.noSaveFile
 ; there's a save file
 	coord hl, 0, 0
-	ld b,6
+	ld b,8
 	ld c,13
 	call TextBoxBorder
 	coord hl, 2, 2
@@ -43,7 +43,7 @@ MainMenu:
 	jr .next2
 .noSaveFile
 	coord hl, 0, 0
-	ld b,4
+	ld b,6
 	ld c,13
 	call TextBoxBorder
 	coord hl, 2, 2
@@ -329,16 +329,17 @@ SpecialEnterMap:
 	jp EnterMap
 
 ContinueText:
-	db "CONTINUE", $4e
+	db "KONTYNUUJ", $4e
 
 NewGameText:
-	db "NEW GAME", $4e
-	db "OPTION@"
+	db "NOWA GRA", $4e
+	db "OPCJE",		$4e
+	db "TŁUMACZENIE@"
 
 CableClubOptionsText:
-	db "TRADE CENTER", $4e
-	db "COLOSSEUM",    $4e
-	db "CANCEL@"
+	db "WYMIANA", $4e
+	db "KOLOSEUM",    $4e
+	db "ANULUJ@"
 
 DisplayContinueGameInfo:
 	xor a
@@ -421,10 +422,10 @@ PrintPlayTime:
 	jp PrintNumber
 
 SaveScreenInfoText:
-	db   "PLAYER"
-	next "BADGES    "
+	db   "GRACZ"
+	next "ODZNAKI   "
 	next "#DEX    "
-	next "TIME@"
+	next "CZAS@"
 
 DisplayOptionMenu:
 	coord hl, 0, 0
@@ -579,19 +580,19 @@ DisplayOptionMenu:
 	jp .eraseOldMenuCursor
 
 TextSpeedOptionText:
-	db   "TEXT SPEED"
-	next " FAST  MEDIUM SLOW@"
+	db   "SZYBKOŚĆ TEKSTU"
+	next " DUŻA  ŚRED.  MAŁA@"
 
 BattleAnimationOptionText:
-	db   "BATTLE ANIMATION"
-	next " ON       OFF@"
+	db   "ANIMACJE WALK"
+	next " TAK      NIE@"
 
 BattleStyleOptionText:
-	db   "BATTLE STYLE"
-	next " SHIFT    SET@"
+	db   "ZMIANY W WALKACH"
+	next " TAK      NIE@"
 
 OptionMenuCancelText:
-	db "CANCEL@"
+	db "WYJDŹ@"
 
 ; sets the options variable according to the current placement of the menu cursors in the options menu
 SetOptionsFromCursorPositions:

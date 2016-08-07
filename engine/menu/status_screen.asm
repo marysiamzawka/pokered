@@ -118,7 +118,7 @@ StatusScreen:
 	call DrawLineBox ; Draws the box around types, ID No. and OT
 	coord hl, 10, 9
 	ld de, Type1Text
-	call PlaceString ; "TYPE1/"
+	call PlaceString ; "TYP 1/"
 	coord hl, 11, 3
 	predef DrawHP
 	ld hl, wStatusScreenHPBarColor
@@ -205,10 +205,10 @@ NamePointers2:
 	dw wDayCareMonName
 
 Type1Text:
-	db "TYPE1/", $4e
+	db "TYP 1/", $4e
 
 Type2Text:
-	db "TYPE2/", $4e
+	db "TYP 2/", $4e
 
 IDNoText:
 	db $73, "№", "/", $4e
@@ -288,10 +288,10 @@ PrintStat:
 	ret
 
 StatsText:
-	db   "ATTACK"
-	next "DEFENSE"
-	next "SPEED"
-	next "SPECIAL@"
+	db   "ATAK"
+	next "OBRONA"
+	next "PRĘDKOŚĆ"
+	next "SPECJAL@"
 
 StatusScreen2:
 	ld a, [hTilesetType]
@@ -462,8 +462,8 @@ CalcExpToLevelUp:
 	ret
 
 StatusScreenExpText:
-	db   "EXP POINTS"
-	next "LEVEL UP@"
+	db   "PKT DOŚW."
+	next "NAST. LV@"
 
 StatusScreen_ClearName:
 	ld bc, 10

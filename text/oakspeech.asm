@@ -1,6 +1,6 @@
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
+	text "AAAAAAAAAAAAAAAA"
+	line "ĄĆĘŁŃÓŚŻŹ"
 	cont "world of #MON!"
 
 	para "My name is OAK!"

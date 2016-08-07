@@ -10,11 +10,11 @@
 	git clone --recursive https://github.com/pret/pokered
 	cd pokered
 
-To build **pokered.gbc** and **pokeblue.gbc**:
+By skompilować **pokered.gbc** i **pokeblue.gbc**:
 
 	make
 
-To build them individually:
+By skompilować każdy z osobna
 
 	make red
 	make blue
@@ -22,7 +22,7 @@ To build them individually:
 
 # Mac
 
-In **Terminal**, run:
+W **Terminalu**:
 
 	xcode-select --install
 
@@ -39,14 +39,14 @@ In **Terminal**, run:
 
 # Windows
 
-To build on Windows, use [**Cygwin**](http://cygwin.com/install.html). Use the default settings.
+Zainstaluj [**Cygwin**](http://cygwin.com/install.html). Użyj ustawień domyślnych.
 
-In the installer, select the following packages: `make` `git` `python` `gettext`
+W instalatorze wybierz pakiety: `make` `git` `python` `gettext`
 
-Then get the most recent version of [**rgbds**](https://github.com/bentley/rgbds/releases/).
-Extract the archive and put `rgbasm.exe`, `rgblink.exe` and `rgbfix.exe` in `C:\cygwin\usr\local\bin`.
+Pobierz najnowszą wersję [**rgbds**](https://github.com/bentley/rgbds/releases/).
+Wypakuj archiwum i umieść `rgbasm.exe`, `rgblink.exe` oraz`rgbfix.exe` w `C:\cygwin\usr\local\bin`.
 
-In the **Cygwin terminal**:
+W **Terminalu Cygwina**:
 
 	git clone --recursive https://github.com/pret/pokered
 	cd pokered

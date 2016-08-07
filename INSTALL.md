@@ -7,7 +7,7 @@
 	sudo make install
 	cd ..
 
-	git clone --recursive https://github.com/pret/pokered
+	git clone --recursive https://github.com/marysiamzawka/pokered-PL
 	cd pokered
 
 By skompilować **pokered.gbc** i **pokeblue.gbc**:
@@ -31,7 +31,7 @@ W **Terminalu**:
 	sudo make install
 	cd ..
 
-	git clone --recursive https://github.com/pret/pokered
+	git clone --recursive https://github.com/marysiamzawka/pokered-PL
 	cd pokered
 
 	make
@@ -48,7 +48,7 @@ Wypakuj archiwum i umieść `rgbasm.exe`, `rgblink.exe` oraz`rgbfix.exe` w `C:\c
 
 W **Terminalu Cygwina**:
 
-	git clone --recursive https://github.com/pret/pokered
+	git clone --recursive https://github.com/marysiamzawka/pokered-PL
 	cd pokered
 
 	make
